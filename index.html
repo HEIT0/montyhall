@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Config-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Monthy Hall Game</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!--Css-->
+	<link rel="shortcut icon" href="icon.png">
+	<!--icone-->
+</head>
+
+<body>
+	<h1>
+		<!--Título-->
+		Monthy Hall
+	</h1>
+	<p>
+		<!--Enunciado-->
+		Atrás de uma das três portas há um carro e nas outras há cabras!
+	</p>
+	<section id="s1">
+		<!--Instrução-->
+		<p id="p1">
+			Escolha uma das portas para ganhar o prêmio!
+		</p>
+	</section>
+	<div id='red'>
+		<input type="radio" id='sim' name='red' onclick="sim()" on-drag="sim()" on-tap="sim()" onchange="sim()"> <!--Seleção Trocar-->
+      <label for="sim">Trocar</label>
+
+      <input type="radio" id='nao' name='red' checked onclick="nao()" on-drag="nao()" on-tap="nao()" onchange="nao()"> <!--Seleção Permanecer-->
+      <label for="nao">Permanecer</label>
+      <!--Botão Confirmar-->
+    <br><input type="button" value="Confirmar" id='confirm' onclick='confirm()'>
+  </div>
+  <!--Portas-->
+        <center>
+		<div class="box" id="box0" onclick="clicar0()">
+			<img id='port1' src="porta.png"/>
+        </div>
+        <div class="box" id="box1" onclick='clicar1()' >
+            <img id='port2' src="porta.png"/>
+        </div>
+        <div class="box" id="box2" onclick='clicar2()' >
+            <img id='port3'src="porta.png"/>
+    </div>
+        </center>
+    <!--Confirmar Escolha-->
+    <input type="button" value="Escolha" id="botaox" onclick="escolher()">
+    <!--Barra branca Finas-->
+    <section id="s2"> 
+      <p>
+      </p>
+    </section>
+    <footer> <!--Creditos-->
+    <p id='credito'>
+      &copy; Heitor e Thiago
+    </p>
+</footer> <!--Creditos-->
+    <script src="script.js"></script>
+  </body>
+</html>
